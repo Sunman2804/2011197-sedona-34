@@ -3,7 +3,6 @@
   font-style: normal;
   font-weight: 400;
   src: url("fonts/ptsans-400.woff2") format("woff2");
-  src: url("fonts/ptsans-400.woff") format("woff");
   font-display: swap;
   }
 
@@ -12,7 +11,6 @@
   font-style: normal;
   font-weight: 700;
   src: url("fonts/ptsans-700.woff2") format("woff2");
-  src: url("fonts/ptsans-700.woff") format("woff");
   font-display: swap;
   }
 
@@ -23,16 +21,62 @@
   --color4: #000000;
   }
 
+html {
+height: 100%;
+
+}
+
 body {
-  font-family: "PT Sanas", sans-serif;
-  width: 1200px;
-  height: 411px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 24px;
   background-color: var(--color3);
   color: var(--color4);
   }
 
+.main-container {
+  flex-grow: 1;
+}
+
+.navigation {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.navigation-list {
+  margin: 0;
+  padding: 0;
+  width: 630px;
+}
+
+.navigation-link {
+  display: flex;
+}
+
+.menu {
+  width: 300px;
+  mergin-left: auto;
+}
+
+.cladding-page {
+  width: 1200px;
+  margin: 0 auto;
+  }
+
+.logo-header {
+  display: block;
+  margin: 0 auto;
+}
+
+.navigation-list {
+
+
+}
 
 
 .navigation-link {
@@ -47,7 +91,8 @@ body {
 .foto-logo {
   background-image: url(../images/images-index/index-background.jpg);
   background-repeat: no-repeat;
-  width: 1200px;
+  margin: 0 auto;
+  width: 960px;
   height: 485px;
   }
 
@@ -61,7 +106,7 @@ body {
   text-decoration: none;
   }
 
-.oblic-page {
+.cladding-page {
   background-color: var(--color1);
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
